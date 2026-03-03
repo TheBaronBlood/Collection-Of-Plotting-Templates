@@ -7,6 +7,7 @@ import Styles
 
 plt.style.use("mylight")
 
+
 # Data from the image
 U1_values = [1,2,3,4,5,6,7,8,9,10]
 I1_values = [0.09,0.19,0.29,0.39,0.49,0.59,0.69,0.8,0.9,1]
