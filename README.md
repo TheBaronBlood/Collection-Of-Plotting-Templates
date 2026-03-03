@@ -73,7 +73,7 @@ plt.style.use("mylight")  # or "mydark"
 
 | `mylight` | `mydark` |
 |:---------:|:--------:|
-| *(screenshot)* | *(screenshot)* |
+| *![mylight](Styles/preview/F-I-Diagram_light.png)* | *![mylight](Styles/preview/F-I-Diagram_dark.png)* |
 
 > Add screenshots by saving example plots to `Styles/preview/` and linking them above with `![mylight](Styles/preview/mylight.png)`.
 
