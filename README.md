@@ -77,7 +77,6 @@ plt.style.use("mylight")  # or "mydark"
 | ![mylight](Styles/preview/klimadiagramm_light.png) | ![mylight](Styles/preview/klimadiagramm_dark.png) |
 | ![mylight](Styles/preview/VORLAGE_light.png) | ![mylight](Styles/preview/VORLAGE_dark.png) |
 
-> Add screenshots by saving example plots to `Styles/preview/` and linking them above with `![mylight](Styles/preview/mylight.png)`.
 
 ## Templates
 
