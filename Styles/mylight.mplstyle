@@ -27,9 +27,12 @@ savefig.dpi: 500          # DPI for saved figures
 lines.markeredgewidth: 0.5 # Marker edge width
 
 # LaTeX settings
-# text.usetex: True          # Enable LaTeX rendering
-# font.family: serif         # Set font family to serif
-# font.serif: Computer Modern  # Use Computer Modern for LaTeX
+# text.usetex: True                                                    # Enable LaTeX rendering
+text.latex.preamble: \usepackage{amsmath}\usepackage[utf8]{inputenc} # for usepackages
+font.family: sans-serif                                              # Set font family to serif
+font.serif: Helvetica Neue, Helvetica, Arial, DejaVu Sans            # Use Computer Modern for LaTeX
+# axes.titlepad: 18
+# axes.labelpad: 10
 
 # Color
 axes.prop_cycle: cycler("color", ["#e6414a","#f18927","#ffc12d","#0fa03f","#27c495","#0b76e7","#8932cc","#d23fd5", "#cf2e41","#e26e19","#eca923","#2acc55","#2ba17c","#2166e1","#6820af","#ae20b1"])
