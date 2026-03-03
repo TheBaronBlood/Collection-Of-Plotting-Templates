@@ -55,9 +55,6 @@ plt.grid(True,ls=":", fillstyle="full")
 plt.legend()
 plt.draw()
 
-#name = os.path.basename(__file__).split(".")[0]
-
-#plt.savefig(f"{name}.png", transparent=False, dpi=600)
 
 plt.show()
 

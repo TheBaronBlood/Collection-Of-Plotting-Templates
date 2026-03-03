@@ -49,17 +49,17 @@ ax.plot(x, y,
 # xytext:    Koordinate des Textes
 # ha:        horizontale Ausrichtung ("center", "left", "right")
 # arrowprops: Aussehen des Pfeils
-# ax.annotate("Label",
-#             xy=(0, 0),
-#             xytext=(0, 3),
-#             ha="center",
-#             fontsize=12,
-#             color=colors[1],
-#             arrowprops=dict(
-#                 color=colors[1],
-#                 arrowstyle="->",   # "->" | "-|>" | "fancy"
-#                 linewidth=1.5
-#             ))
+ax.annotate("Label",
+            xy=(0, 0),
+            xytext=(0, 3),
+            ha="center",
+            fontsize=12,
+            color=colors[1],
+            arrowprops=dict(
+                color=colors[1],
+                arrowstyle="->",   # "->" | "-|>" | "fancy"
+                linewidth=1.5
+            ))
 
 # ── Achsenbeschriftung & Titel ───────────────────────────────────────────────
 # LaTeX-Symbole mit r"$...$" möglich, z.B. r"$\Omega$", r"$\mu$"
@@ -89,8 +89,16 @@ fig.tight_layout()
 
 # ── Speichern (optional) ─────────────────────────────────────────────────────
 # Dateiname wird automatisch vom Script-Namen abgeleitet
+# from pathlib import Path
 # name = os.path.basename(__file__).split(".")[0]
+# preview_dir = Path(__file__).parents[2] / "Styles" / "preview"
+# preview_dir.mkdir(parents=True, exist_ok=True)
 # fig.savefig(f"Output/{name}.pdf")   # PDF
 # fig.savefig(f"Output/{name}.png")   # PNG
 
-plt.show()
+
+from pathlib import Path
+name = os.path.basename(__file__).split(".")[0]
+preview_dir = Path(__file__).parents[1] / "Styles" / "preview"
+preview_dir.mkdir(parents=True, exist_ok=True)
+fig.savefig(preview_dir / f"{name}_dark.png")

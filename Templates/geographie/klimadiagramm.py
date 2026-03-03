@@ -25,7 +25,7 @@ ax1.plot(months, temp_mid, color=color, zorder=3)
 ax1.tick_params(axis='y', labelcolor=color)
 ax1.set_ylim(round(np.min(temp_mid)-10), round(np.max(temp_mid)+10*2))
 ax1.yaxis.set_major_locator(ticker.MultipleLocator(10))
-ax1.set_title(r"$$\textbf{Deutschland }\text{(München)}$$", loc="left", pad=10)
+ax1.set_title(r"München", loc="left", pad=10)
 
 ax2 = ax1.twinx()
 color = color_cycle[5]
@@ -41,3 +41,4 @@ ax2.fill_between(months, nn, temp_mid*2, where=nn<temp_mid*2, interpolate=True, 
 
 fig.tight_layout()
 plt.show()
+
