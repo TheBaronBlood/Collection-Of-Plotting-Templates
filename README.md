@@ -63,12 +63,15 @@ plt.style.use("mylight")  # or "mydark"
 
 ### Preview
 
-|                     `mylight`                     |                     `mydark`                     |
-| :------------------------------------------------: | :-----------------------------------------------: |
-|  ![mylight](Styles/preview/F-I-Diagram_light.png)  |  ![mylight](Styles/preview/F-I-Diagram_dark.png)  |
-| ![mylight](Styles/preview/klimadiagramm_light.png) | ![mylight](Styles/preview/klimadiagramm_dark.png) |
-|    ![mylight](Styles/preview/VORLAGE_light.png)    |    ![mylight](Styles/preview/VORLAGE_dark.png)    |
+<div align="center">
 
+| mylight | mydark |
+| :---: | :---: |
+| <img src="Styles/preview/F-I-Diagram_light.png" width="400" alt="F-I-Diagram light"> | <img src="Styles/preview/F-I-Diagram_dark.png" width="400" alt="F-I-Diagram dark"> |
+| <img src="Styles/preview/klimadiagramm_light.png" width="400" alt="klimadiagramm light"> | <img src="Styles/preview/klimadiagramm_dark.png" width="400" alt="klimadiagramm dark"> |
+| <img src="Styles/preview/VORLAGE_light.png" width="400" alt="VORLAGE light"> | <img src="Styles/preview/VORLAGE_dark.png" width="400" alt="VORLAGE dark"> |
+
+</div>
 
 ## Templates
 
