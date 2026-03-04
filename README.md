@@ -170,7 +170,6 @@ pip install -e .
 ```
 > [!Important]
 > make sure your terminal is in the right .venv 
->
 > ```terminal
 > (.venv) PS C:\absolute\path\Collection-Of-Plotting-Templates> pip install -e .
 > ```
@@ -179,7 +178,6 @@ pip install -e .
 
 > [!Tip]
 > you can now deleate all create folders `Styles.egg-info` and the toml `project.toml`
->
 
 </details>
 
