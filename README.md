@@ -171,7 +171,7 @@ Styles = ["*.mplstyle"]
 ```terminal
 pip install -e .
 ```
-> [!Important]
+> Important
 > make sure your terminal is in the right .venv 
 > ```terminal
 > (.venv) PS C:\absolute\path\Collection-Of-Plotting-Templates> pip install -e .
@@ -179,11 +179,10 @@ pip install -e .
 
 3. now it shoud works
 
-> [!Tip]
+> Tip
 > you can now deleate all create folders `Styles.egg-info` and the toml `project.toml`
 
 </details>
-
 <details>
 <summary>MacOS / Linux</summary>
   
