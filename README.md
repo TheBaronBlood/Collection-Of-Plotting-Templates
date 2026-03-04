@@ -29,14 +29,6 @@
 <tr>
 <td>
 
-**Collection of Plotting Templates** is a shared repository of _ready-to-use_ **Matplotlib plot templates** and **custom style files** — designed for fast, consistent, and beautiful data visualizations.
-
-It comes with two polished themes (**light** and **dark**), a reusable template structure, and a `Styles` package that auto-registers all styles on import — no configuration needed.
-
-</td>
-</tr>
-</table>
-
 ---
 
 ## Structure
@@ -71,21 +63,21 @@ plt.style.use("mylight")  # or "mydark"
 
 ### Preview
 
-| `mylight` | `mydark` |
-|:---------:|:--------:|
-| ![mylight](Styles/preview/F-I-Diagram_light.png) | ![mylight](Styles/preview/F-I-Diagram_dark.png) |
+|                     `mylight`                     |                     `mydark`                     |
+| :------------------------------------------------: | :-----------------------------------------------: |
+|  ![mylight](Styles/preview/F-I-Diagram_light.png)  |  ![mylight](Styles/preview/F-I-Diagram_dark.png)  |
 | ![mylight](Styles/preview/klimadiagramm_light.png) | ![mylight](Styles/preview/klimadiagramm_dark.png) |
-| ![mylight](Styles/preview/VORLAGE_light.png) | ![mylight](Styles/preview/VORLAGE_dark.png) |
+|    ![mylight](Styles/preview/VORLAGE_light.png)    |    ![mylight](Styles/preview/VORLAGE_dark.png)    |
 
 
 ## Templates
 
 Each template is a self-contained, ready-to-run script. Copy it, swap in your data, done.
 
-| Template | Category | Description |
-|----------|----------|-------------|
-| `U-I-Diagram.py` | ADT | Voltage–Current diagram with markers and legend |
-| *(more coming)* | | |
+| Template         | Category | Description                                      |
+| ---------------- | -------- | ------------------------------------------------ |
+| `U-I-Diagram.py` | ADT      | Voltage–Current diagram with markers and legend |
+| *(more coming)*  |          |                                                  |
 
 ### Template Structure
 
@@ -120,12 +112,14 @@ plt.show()
 ## Setup
 
 ##### 1. Clone the repository
+
 ```bash
 git clone https://github.com/TheBaronBlood/Collection-Of-Plotting-Templates.git
 cd Collection-Of-Plotting-Templates
 ```
 
 ##### 2. Create a virtual environment
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # macOS / Linux
@@ -133,6 +127,7 @@ source .venv/bin/activate        # macOS / Linux
 ```
 
 ##### 3. Install dependencies
+
 ```bash
 pip install matplotlib numpy pandas
 ```
@@ -141,13 +136,63 @@ pip install matplotlib numpy pandas
 
 So that `import Styles` works from any script in the project, add the root path to your environment:
 
-```bash
-# macOS / Linux
-echo "/absolute/path/to/Collection-Of-Plotting-Templates" > .venv/lib/pythonX.X/site-packages/myproject.pth
+<details>
+<summary>Windows</summary>
 
-# Windows
-echo D:\path\to\Collection-Of-Plotting-Templates > .venv\Lib\site-packages\myproject.pth
+1. create a `project.toml` in the root dir
+  
+```toml
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Styles"
+version = "0.1.0"
+description = "A collection of matplotlib styles"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.0.0",
+    "numpy>=1.20.0",
+]
+  
+[tool.setuptools]
+packages = ["Styles"]
+  
+[tool.setuptools.package-data]
+Styles = ["*.mplstyle"]
 ```
+  
+2. build the Style Package
+  
+```terminal
+pip install -e .
+```
+> [!Important]
+> make sure your terminal is in the right .venv 
+>
+> ```terminal
+> (.venv) PS C:\absolute\path\Collection-Of-Plotting-Templates> pip install -e .
+> ```
+
+3. now it shoud works
+
+> [!Tip]
+> you can now deleate all create folders `Styles.egg-info` and the toml `project.toml`
+>
+
+</details>
+
+<details>
+<summary>MacOS / Linux</summary>
+  
+```bash
+echo "/absolute/path/to/Collection-Of-Plotting-Templates" > .venv/lib/pythonX.X/site-packages/myproject.pth
+```
+</details>
+
+
+
 
 > [!NOTE]
 > **PyCharm** handles this automatically. **VS Code** requires the `.pth` file above.
@@ -171,3 +216,4 @@ Got a template you'd like to share? Follow these steps:
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
